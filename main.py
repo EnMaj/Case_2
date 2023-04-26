@@ -38,7 +38,7 @@ if nalog==True:
                         temp_question=input(ru.QUESTION_2_4)
 
 
-
-print(ru.NALOG+str(NDFL)+"%")
-income=int(input(ru.INCOME))
-print(ru.NALOG_FALSE,(income/100)*NDFL)
+if nalog==True:
+    print(ru.NALOG+str(NDFL)+"%")
+    income=int(input(ru.INCOME))
+    print(ru.NALOG_FALSE,(income/100)*NDFL)
