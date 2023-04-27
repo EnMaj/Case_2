@@ -67,4 +67,4 @@ if nalog==True:
 if nalog==True:
     print(ru.NALOG+str(NDFL)+"%")
     income=int(input(ru.INCOME))
-    print(ru.NALOG_FALSE,(income/100)*NDFL)
+    print(ru.NALOG_SUMM,(income/100)*NDFL)
