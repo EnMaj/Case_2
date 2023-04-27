@@ -36,6 +36,32 @@ if nalog==True:
                 else:
                     if resident==True:
                         temp_question=input(ru.QUESTION_2_4)
+                        if temp_question.upper()=='ДА':
+                            NDFL=15
+                        else:
+                            NDFL=13
+                    else:
+                        temp_question = input(ru.QUESTION_2_4)
+                        if temp_question.upper() == 'ДА':
+                            temp_question = input(ru.QUESTION_2_5)
+                            if temp_question.upper() == 'ДА':
+                                NDFL=15
+                            else:
+                                temp_question = input(ru.QUESTION_2_6)
+                                if temp_question.upper() == 'ДА':
+                                    NDFL=15
+                                else:
+                                    NDFL=30
+                        else:
+                            temp_question = input(ru.QUESTION_2_5)
+                            if temp_question.upper() == 'ДА':
+                                NDFL=13
+                            else:
+                                temp_question = input(ru.QUESTION_2_6)
+                                if temp_question.upper() == 'ДА':
+                                    NDFL=13
+                                else:
+                                    NDFL=30
 
 
 if nalog==True:
